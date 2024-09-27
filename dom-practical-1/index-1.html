@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with createElement, setAttribute, and appendChild</title>
+</head>
+<body>
+    
+
+    <script>
+        //example 1- To create a heading and set its text
+        var heading = document.createElement('h1');
+        heading.textContent = 'i am a girl';
+        document.body.appendChild(heading);
+
+
+        //example 2-create an image,set its src and alt attribute
+        var image = document.createElement('img');
+        image.setAttribute('src', '/dom-practical-1/images/nike-logo.png');
+        image.setAttribute('alt', 'nike-logo');
+        document.body.appendChild(image);
+    </script>
+</body>
+</html>
